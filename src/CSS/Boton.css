@@ -9,11 +9,16 @@
     border: none;
     font-size: 18px;
     font-weight: 800;
-    transition: all 1s;
+    margin-bottom: 25px;
 }
 
 .btn:hover{
     color: #95FFD4;
     cursor: pointer;
-    box-shadow: 5px 5px 25px 0px #6278F7;
+    /* box-shadow: 4px 4px 10px 0px #6278F7; */
+}
+
+.btn:active{
+    transform: scale(1.02);
+    
 }

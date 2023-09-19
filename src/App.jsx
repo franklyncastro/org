@@ -1,7 +1,8 @@
 
 import './App.css'
-import Form from './Components/Form'
 import Header from './Components/Header'
+import Form from './Components/Form'
+import MiOrg from './Components/MiOrg'
 
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
     <>
      <Header/>
      <Form/>
+     <MiOrg/>
     </>
   )
 }

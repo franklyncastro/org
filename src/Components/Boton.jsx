@@ -1,9 +1,9 @@
 import '../CSS/Boton.css'
 
-const Boton = () => {
+const Boton = ({title}) => {
   return (
     <div className='container_btn'>
-      <button className='btn'>Crear</button>
+      <button className='btn'>{title}</button>
     </div>
   )
 }

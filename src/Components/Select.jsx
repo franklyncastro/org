@@ -11,15 +11,12 @@ const equipo = [
   "Innovación y  Gestión",
 ];
 
-// equipo.map((team, index) => {
-//   console.log(team, index);
-// });
 
 const Select = () => {
   return (
     <div className="container">
       <label>Equipo</label>
-      <select className="select">
+      <select className="select" >
         <option value="0" selected disabled>
           Seleccione un equipo
         </option>

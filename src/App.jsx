@@ -7,15 +7,15 @@ import MiOrg from "./Components/MiOrg";
 function App() {
   const [mostrarForm, setMostrarForm] = useState(false);
 
-  const mostrarFormulario =()=>{
-    setMostrarForm(!mostrarForm)
-  }
+  const mostrarFormulario = () => {
+    setMostrarForm(!mostrarForm);
+  };
 
   return (
     <>
       <Header />
-      {mostrarForm === false ? <div> </div> : <Form /> }
-      <MiOrg mostrarFormulario ={mostrarFormulario} />
+      {mostrarForm === false ? <div> </div> : <Form />}
+      <MiOrg mostrarFormulario={mostrarFormulario} />
     </>
   );
 }

@@ -9,9 +9,14 @@ const Form = () => {
   const [puesto, setPuesto] = useState("");
   const [foto, setFoto] = useState("");
 
-
   const prevent = (e) => {
     e.preventDefault();
+
+    setNombre("");
+    setPuesto("");
+    setFoto("");
+
+    alert("Datos enviados con exito");
   };
 
   return (
@@ -19,9 +24,24 @@ const Form = () => {
       <form className="form" onSubmit={prevent}>
         <h2>Rellena el formulario para crear el colaborador.</h2>
 
-        <Input title="Nombre" placeholder="Ingresar nombre..." values={nombre} updateValue={setNombre}/>
-        <Input title="Puesto" placeholder="Ingresar puesto..." values={puesto} updateValue={setPuesto}/>
-        <Input title="Foto" placeholder="Ingresar link de la url..." values={foto} updateValue={setFoto}/>
+        <Input
+          title="Nombre"
+          placeholder="Ingresar nombre..."
+          values={nombre}
+          updateValue={setNombre}
+        />
+        <Input
+          title="Puesto"
+          placeholder="Ingresar puesto..."
+          values={puesto}
+          updateValue={setPuesto}
+        />
+        <Input
+          title="Foto"
+          placeholder="Ingresar link de la url..."
+          values={foto}
+          updateValue={setFoto}
+        />
 
         <Select />
 

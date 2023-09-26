@@ -3,6 +3,9 @@ import "./App.css";
 import Header from "./Components/Header";
 import Form from "./Components/Form";
 import MiOrg from "./Components/MiOrg";
+import Equipo from "./Components/Equipo";
+
+
 
 function App() {
   const [mostrarForm, setMostrarForm] = useState(false);
@@ -16,6 +19,7 @@ function App() {
       <Header />
       {mostrarForm === false ? <div> </div> : <Form />}
       <MiOrg mostrarFormulario={mostrarFormulario} />
+      <Equipo/>
     </>
   );
 }

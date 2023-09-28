@@ -11,25 +11,25 @@ export const equipo = [
 export const team = [
   {
     title: "Programación",
-    colorPrimario: "#57C278",
-    colorSecundario: "#D9F7E9",
+    colorOne: "#57C278",
+    colorTwo: "#D9F7E9",
   },
-  { title: "Front End", colorPrimario: "#82CFFA", colorSecundario: "#E8F8FF" },
+  { title: "Front End", colorOne: "#82CFFA", colorTwo: "#E8F8FF" },
   {
     title: "Data Science",
-    colorPrimario: "#A6D157",
-    colorSecundario: "#F0F8E2",
+    colorOne: "#A6D157",
+    colorTwo: "#F0F8E2",
   },
-  { title: "Devops", colorPrimario: "#E06B69", colorSecundario: "#FDE7E8" },
+  { title: "Devops", colorOne: "#E06B69", colorTwo: "#FDE7E8" },
   {
     title: "UX y Diseño",
-    colorPrimario: "#DB6EBF",
-    colorSecundario: "#FAE9F5",
+    colorOne: "#DB6EBF",
+    colorTwo: "#FAE9F5",
   },
-  { title: "Móvil", colorPrimario: "#FFBA05", colorSecundario: "#FFF5D9" },
+  { title: "Móvil", colorOne: "#FFBA05", colorTwo: "#FFF5D9" },
   {
     title: "Innovación y  Gestión",
-    colorPrimario: "#FF8A29",
-    colorSecundario: "#FFEEDF",
+    colorOne: "#FF8A29",
+    colorTwo: "#FFEEDF",
   },
 ];

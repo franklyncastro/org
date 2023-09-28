@@ -4,8 +4,7 @@ import Header from "./Components/Header";
 import Form from "./Components/Form";
 import MiOrg from "./Components/MiOrg";
 import Equipo from "./Components/Equipo";
-
-
+import { team } from "./Components/data";
 
 function App() {
   const [mostrarForm, setMostrarForm] = useState(false);
@@ -17,9 +16,14 @@ function App() {
   return (
     <>
       <Header />
+
       {mostrarForm === false ? <div> </div> : <Form />}
+
       <MiOrg mostrarFormulario={mostrarFormulario} />
-      <Equipo/>
+      {team.map((team, index) => {
+        return <Equipo key={index} team={team} />;
+      })}
+      
     </>
   );
 }

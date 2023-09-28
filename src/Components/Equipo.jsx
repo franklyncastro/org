@@ -1,16 +1,15 @@
+import style from '../CSS/Equipo.module.css'
 
-import '../CSS/Equipo.css'
 
-
-const equipo = () => {
+const equipo = ({team}) => {
   return (
-    <section className='container'>
-      <h3>Programación</h3>
-      <div className='team'>
-        
+    <section className={style.container}>
+      <h3>{team.title}</h3>
+      <div className={style.team}>
+
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default equipo
+export default equipo;

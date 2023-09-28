@@ -1,22 +1,13 @@
-import React from "react";
-import "../CSS/Select.css";
+import style from '../CSS/Select.module.css';
+import { equipo } from "./data";
 
-const equipo = [
-  "Programación",
-  "Front End",
-  "Data Science",
-  "Devops",
-  "UX y Diseño",
-  "Móvil",
-  "Innovación y  Gestión",
-];
 
 
 const Select = () => {
   return (
-    <div className="container">
+    <div className={style.container}>
       <label>Equipo</label>
-      <select className="select" >
+      <select className={style.select} >
         <option value="0" selected disabled>
           Seleccione un equipo
         </option>

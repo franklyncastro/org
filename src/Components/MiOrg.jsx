@@ -1,11 +1,11 @@
-import '../CSS/MiOrg.css'
+import style from '../CSS/MiOrg.module.css'
 
 
 const MiOrg = ({mostrarFormulario}) => {
   
   return (
-    <section className='orgSection'>
-        <h3 className='title'>Mi organización</h3>
+    <section className={style.orgSection}>
+        <h3 className={style.title}>Mi organización</h3>
         <img src="/img/add.png" alt="icon add" onClick={mostrarFormulario}/>
     </section>
   )

@@ -1,4 +1,4 @@
-import "../CSS/Form.css";
+import style from '../CSS/Form.module.css'
 import Input from "./Input";
 import Boton from "./Boton";
 import Select from "./Select";
@@ -20,8 +20,8 @@ const Form = () => {
   };
 
   return (
-    <section className="container">
-      <form className="form" onSubmit={prevent}>
+    <section className={style.container}>
+      <form className={style.form} onSubmit={prevent}>
         <h2>Rellena el formulario para crear el colaborador.</h2>
 
         <Input

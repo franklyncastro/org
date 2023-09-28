@@ -1,11 +1,11 @@
-import '../CSS/Boton.css'
+import style from "../CSS/Boton.module.css";
 
-const Boton = ({title}) => {
+const Boton = ({ title }) => {
   return (
-    <div className='container_btn'>
-      <button className='btn'>{title}</button>
+    <div className={style.container_btn}>
+      <button className={style.btn}>{title}</button>
     </div>
-  )
-}
+  );
+};
 
-export default Boton
+export default Boton;

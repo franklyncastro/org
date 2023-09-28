@@ -9,6 +9,14 @@
     box-sizing: border-box;   
     color: #171717;
     font-family: 'Montserrat', sans-serif;
+    margin-bottom: 3em;
 }
 
+.container label{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 8px;
+    display: block;   
+}
 

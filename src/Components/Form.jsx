@@ -1,4 +1,4 @@
-import style from '../CSS/Form.module.css'
+import style from "../CSS/Form.module.css";
 import Input from "./Input";
 import Boton from "./Boton";
 import Select from "./Select";
@@ -8,13 +8,24 @@ const Form = () => {
   const [nombre, setNombre] = useState("");
   const [puesto, setPuesto] = useState("");
   const [foto, setFoto] = useState("");
+  const [equipo, setEquipo] = useState("");
 
   const prevent = (e) => {
     e.preventDefault();
 
+    let datos = {
+      nombre,
+      puesto,
+      foto,
+      equipo
+    };
+
+    console.log(datos);
+
     setNombre("");
     setPuesto("");
     setFoto("");
+    setEquipo("")
 
     alert("Datos enviados con exito");
   };
@@ -43,7 +54,7 @@ const Form = () => {
           updateValue={setFoto}
         />
 
-        <Select />
+        <Select values={equipo} updateValue={setEquipo} />
 
         <Boton title="Crear" />
       </form>

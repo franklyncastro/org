@@ -1,10 +1,16 @@
 import style from "../CSS/Card.module.css";
+import '../CSS/icons/icons.css'
 
-const Card = ({ colorCard, Users }) => {
-  const { nombre, puesto, foto } = Users;
+const Card = ({ colorCard, Users, deleteUser }) => {
+  const { nombre, puesto, foto } = Users;  
+
+  console.log(deleteUser)
+
 
   return (
     <div className={style.container}>
+
+      <span onClick={deleteUser}><i className="fa-solid fa-circle-xmark"></i></span>
       <div className={style.card} style={{ backgroundColor: colorCard }}>
         <img src={foto} alt='Img not found' />
       </div>

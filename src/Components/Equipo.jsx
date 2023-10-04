@@ -1,13 +1,11 @@
 import style from "../CSS/Equipo.module.css";
 import Card from "./Card";
 
-const equipo = ({ team, Users }) => {
-
+const equipo = ({ team, Users, deleteUser }) => {
 
   return (
     <>
-      {
-      (Users.length > 0 && 
+      {Users.length > 0 && (
         <section
           className={style.container}
           style={{ backgroundColor: team.colorTwo }}
@@ -15,12 +13,11 @@ const equipo = ({ team, Users }) => {
           <h3 style={{ borderColor: team.colorOne }}>{team.title}</h3>
           <div className={style.team}>
             {Users.map((u, i) => (
-              <Card key={i} colorCard={team.colorOne} Users={u} />
+              <Card key={i} colorCard={team.colorOne} Users={u} deleteUser={deleteUser}/>
             ))}
           </div>
         </section>
-      )
-      }
+      )}
     </>
   );
 };

@@ -1,6 +1,7 @@
 .container{
     width: 280px;
     margin-bottom: 24px;
+    position: relative;
 }
 
 .container .card{

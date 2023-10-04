@@ -1,0 +1,17 @@
+.fa-solid {
+position: absolute;
+top: -13px;
+right: -13px;
+cursor: pointer;
+}
+
+.fa-solid:hover {
+    transform: scale(1.1);
+    color: red;
+    background-color: #1d1d1d;
+    border-radius: 50%;
+}
+
+.fa-solid:active{
+    color: green;
+}

@@ -5,10 +5,20 @@ import Form from "./Components/Form";
 import MiOrg from "./Components/MiOrg";
 import Equipo from "./Components/Equipo";
 import { team } from "./Components/data";
+import Footer from "./Components/Footer";
 
 function App() {
   const [mostrarForm, setMostrarForm] = useState(false);
-  const [Users, setUsers] = useState([]);
+
+
+  const [Users, setUsers] = useState([
+    {
+      nombre: "Franklyn Yawerlyn Castro",
+      puesto: "Desarrollador",
+      foto: "https://github.com/franklyncastro.png",
+      equipo: "Programación",
+    },
+  ]);
 
   const mostrarFormulario = () => {
     setMostrarForm(!mostrarForm);
@@ -18,6 +28,10 @@ function App() {
     setUsers([...Users, user]);
   };
 
+  const deleteUser =(id)=>{
+      
+  }
+  
   return (
     <>
       <Header />
@@ -29,8 +43,15 @@ function App() {
       <MiOrg mostrarFormulario={mostrarFormulario} />
 
       {team.map((team, index) => (
-        <Equipo key={index} team={team} Users={Users.filter(usr => usr.equipo === team.title )} />
+        <Equipo
+          key={index}
+          team={team}
+          Users={Users.filter((usr) => usr.equipo === team.title)}
+          deleteUser={deleteUser}
+        />
       ))}
+
+      <Footer />
     </>
   );
 }

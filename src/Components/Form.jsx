@@ -4,11 +4,14 @@ import Boton from "./Boton";
 import Select from "./Select";
 import { useState } from "react";
 
-const Form = () => {
+const Form = ({registerUser}) => {
   const [nombre, setNombre] = useState("");
   const [puesto, setPuesto] = useState("");
   const [foto, setFoto] = useState("");
   const [equipo, setEquipo] = useState("");
+
+ 
+
 
   const prevent = (e) => {
     e.preventDefault();
@@ -20,7 +23,8 @@ const Form = () => {
       equipo
     };
 
-    console.log(datos);
+    registerUser(datos)
+    
 
     setNombre("");
     setPuesto("");
